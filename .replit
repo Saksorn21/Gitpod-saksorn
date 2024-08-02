@@ -1,0 +1,7 @@
+modules = ["nodejs-20", "bash"]
+run = "pnpm --watch src/index.ts"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "pnpm --watch src/index.ts"]
